@@ -1,6 +1,16 @@
+
 spring:
   application:
     name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[ /** ]':
+            exposedHeaders: "*"
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
 #  cloud:
 #    gateway:
 #      routes:
