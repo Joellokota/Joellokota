@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: r1
+#          uri:
+#            http://localhost:9091/
+#          predicates:
+#            - Path=/customers/**
+#        - id: r2
+#          uri:
+#            http://localhost:9092/
+#          predicates:
+#            - Path=/etablishments/**
+#        - id: r3
+#          uri: http://localhost:9093/
+#          predicates:
+#            - Path=/bookings/**
+server:
+  port: 9090
