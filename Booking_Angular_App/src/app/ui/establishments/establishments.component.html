@@ -6,19 +6,20 @@
     </div>
     <div class="card-body">
 
-      <table>
+      <table class="table">
         <thead>
         <tr>
-          <th>SIREN</th><th>SIRET</th><th>PROPRIETAIRE</th><th>GESTIONNAIRE</th><th>DATE</th><th>LOGEMENT</th>
+          <th>ID</th><th>NOM</th><th>TYPE ETABLISSEMENT</th><th>DATE CREATION</th><th>ADRESSE</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let p of listEtablishments">
+          <td>{{p.id}}</td>
+          <td>{{p.name}}</td>
+          <td>{{p.typeBuilding}}</td>
+          <td>{{p.creationDate}}</td>
+          <td>{{p.address}}</td>
+
         </tr>
         </tbody>
 
