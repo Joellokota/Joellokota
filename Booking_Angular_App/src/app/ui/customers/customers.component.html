@@ -1,0 +1,33 @@
+<div class="p-3">
+
+  <div class="card">
+    <div class="card-header">
+        <h3>Liste des clients</h3>
+    </div>
+    <div class="card-body">
+
+      <table class="table">
+          <thead>
+            <tr>
+              <th>SIREN</th>
+              <th>GESTIONNAIRE</th>
+              <th>SIRET</th>
+              <th>DATE</th>
+              <th>LOGEMENT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let p of customers">
+              <td>{{ p.siren }}</td>
+              <td>{{ p.legalManager}}</td>
+              <td>{{ p.siret}}</td>
+              <td>{{ p.dateCreation }}</td>
+              <td>{{ p.typeCustomer }}</td>
+            </tr>
+          </tbody>
+
+      </table>
+    </div>
+
+  </div>
+</div>
